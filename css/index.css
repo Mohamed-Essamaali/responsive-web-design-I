@@ -68,10 +68,14 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+
 * {
 	font-family: 'Times New Roman', Times, serif ;
 	line-height: 1.5; 
 }
+
+
+
 h3 {
 	font-size: 1.2em;
 }
@@ -94,36 +98,50 @@ nav a {
 .logo {
     display: flex;
     align-self: center;
-    width: 200px;
-    height: 40px
+    width: 12vw;
+    height: 6vh;
 	
 }
 .head-text {
+    width: 100%;
     display: flex;
+    justify-content: center;
     
 }
 .head-text div {
     text-align: center;
     width:35%;
     margin: 2% 5%;
-    padding: 2% 5%;
+    padding: 2% 2.5%;
     font-size: 5em;
+    text-transform: uppercase;
 
 }
 .head-text img {
     width: 35%;
     margin: 2% 5%;
-    padding: 2% 5%;
+    padding: 2% 2.5%;
 }
+ button {
+     width: 40%;
+     height: 8%;
+     background: #f8f8f8;
+     border: 1px solid black;
+     font-size:0.2em
+    
+ }
 .top-section {
-    display:flex;
     width: 90%;
+    display:flex;
+    justify-content: space-between;
     margin: 2% 5%;
+    padding: 1% 3%;
 
 }
 .top-section div {
-    width: 40%;
-    padding: 2% 1%; 
+    width: 45%;
+    padding: 2% 2%; 
+    
 }
 
 hr  {
@@ -136,37 +154,23 @@ hr  {
 	padding-top:1%;
 
 }
-.main-header .head-text{
-
-}
-
-}
-.top-section {
-	width: 90%;
-	margin: 2% 5%;
-	display: flex;
 	
-
-
-}
-.top-section div {
-	margin: auto 5%;
-}
 .middle-img {
-	width: 80%;
-	margin:2% 10%;
+   	width: 80%;
+    margin:2% 10%;
+    
 }
 .main-section {
-	width: 80%;
+	width: 85%;
 	display: flex;
 	justify-content: space-between;;
 	flex-wrap: wrap;
-	margin: 2% 10%;
+	margin: 2% 7.5%;
 	
 }
 .main-section div {
-	width: 30%;
-
+	width: 32%;
+    padding: 2% 2.5%;
 	line-height: 1.2;
 
 }
@@ -188,13 +192,78 @@ address, a {
 	padding: 3%;
 }
 @media (max-width:767px){
-    .index-header img {
+    .head-text img {
         display:none;
     }
+  
+nav {
+    
+    flex-direction: column-reverse;  
+    
+}
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+.nav-links a {
+    
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid #999696;
+    font-size: 1.3em;
+    padding: 3% 0;
+    margin: 0 auto;
+    font-size: 1.3em;
+    color: #aca6a6
+    ;
+}
+a:nth-of-type(1){
+    margin-top: 2%;
+    border-top: 1px solid #999696;
+}
+button{
+    font-size: 0.25em;;
+    width: 25vw;
+    height: 5vh;
+    font-weight: 500;
+    background: #f5f5f5;
+}
+.logo {
+    width:25vh;
+    height: 6vh;
+    margin-top: 2%;
+    
+}
+.head-text {
+    margin: 1% 0;
+}
+.head-text div {
+    font-family: arial,sans-serif;
+    text-transform: uppercase;
+    width: 60%;
+    font-size: 3.5em;
+    font-weight: 900;
+    
+}
+.top-section, .main-section {
+    flex-direction: column;
+}
+.top-section div {
+    margin: 2% 0;
+    width: 100%;
+}
+.main-section div {
+    margin: 2% 0;
+    width:100%;
+}
 
 
 }
 
+/*---- Mobile media styling -----*/
 @media (mx-width:480px){
 
 }
