@@ -80,7 +80,7 @@ h3 {
 	font-size: 1.2em;
 }
 
-nav {
+.nav-links {
 	width: 90%;
 	margin: 0 5%;
 	display: flex;
@@ -88,8 +88,11 @@ nav {
 
 	
 }
+nav {
+    display: flex;
+}
 nav a {
-	width: 11%;
+	width: 15%;
 	text-decoration: none;
 	margin: 2% 1%;
 	padding: 1% 4%;
@@ -102,6 +105,7 @@ nav a {
     height: 6vh;
 	
 }
+
 .head-text {
     width: 100%;
     display: flex;
@@ -123,7 +127,7 @@ nav a {
     padding: 2% 2.5%;
 }
  button {
-     width: 40%;
+     width: 50%;
      height: 8%;
      background: #f8f8f8;
      border: 1px solid black;
@@ -191,54 +195,138 @@ address, a {
 	text-align: center;
 	padding: 3%;
 }
+
+/*---------- Tablet media styling ------------*/
+
 @media (max-width:767px){
+    .main-header{
+        width: 100%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .head-text {
+        color: red;
+    }
     .head-text img {
         display:none;
     }
-  
-nav {
-    
-    flex-direction: column-reverse;  
-    
+    nav {
+        flex-direction: column-reverse;
+         justify-content: center;
+        width: 100%;
+        height: 30vh;
+        margin: 0 5% 0 0;
+        
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+    .nav-links a {
+        width: 15%;
+        padding: 1% 2%;
+        font-size: 1.1em;
+        font-weight: 500; 
+        color: #aca6a6;
+    }
+
+   
+    .logo {
+        width: 20vw;
+        height: 5vh;
+        margin: 0 0 5% 0;
+       
+    }
+    button {  
+        font-size: 1.5vw;
+        font-weight: 500;
+        width: 25vw;
+        height: 5vh;
+    }
+    .head-text {
+        display: flex;
+        align-items: center;
+       
+        padding: 5% 0;
+        
+       
+    }
+    .head-text div {
+        width: 45vw;;
+    }
+
+
 }
+
+/*-------------  Mobile media styling -----------------*/
+
+@media (max-width:480px){
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*background: green;*/
+        height: 100vh;
+        margin: 5% 2%;
+    }
+     /*  .head-text {
+           background:  brown;
+       }*/
+   
+  nav{
+     display: flex;
+      flex-direction: column-reverse;
+      height:55vh;
+  }
+
 .nav-links {
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: 55vh;
+    
 }
 .nav-links a {
     
     width: 90%;
     text-align: center;
     border-bottom: 1px solid #999696;
-    font-size: 1.3em;
-    padding: 3% 0;
+    padding: 4% 0;
     margin: 0 auto;
     font-size: 1.3em;
     color: #aca6a6
     ;
 }
-a:nth-of-type(1){
+.nav-links a:nth-of-type(1){
     margin-top: 2%;
     border-top: 1px solid #999696;
 }
 button{
-    font-size: 0.25em;;
+    font-size: 0.2em;
     width: 25vw;
     height: 5vh;
     font-weight: 500;
     background: #f5f5f5;
 }
 .logo {
-    width:25vh;
-    height: 6vh;
-    margin-top: 2%;
+    width:20vh;
+    height: 5vh;
+    margin: 2% 0;
+    
+    
     
 }
+
 .head-text {
     margin: 1% 0;
+    color: green;
 }
 .head-text div {
     font-family: arial,sans-serif;
@@ -248,22 +336,21 @@ button{
     font-weight: 900;
     
 }
-.top-section, .main-section {
-    flex-direction: column;
-}
-.top-section div {
-    margin: 2% 0;
-    width: 100%;
-}
-.main-section div {
-    margin: 2% 0;
-    width:100%;
+footer a {
+    border-top:0;
 }
 
-
-}
-
-/*---- Mobile media styling -----*/
-@media (mx-width:480px){
+   
+    .top-section, .main-section {
+        flex-direction: column;
+    }
+    .top-section div {
+        margin: 2% 0;
+        width: 100%;
+    }
+    .main-section div {
+        margin: 2% 0;
+        width:100%;
+    }
 
 }
