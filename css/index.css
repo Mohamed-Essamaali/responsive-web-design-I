@@ -1,3 +1,359 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+
+* {
+	font-family: 'Times New Roman', Times, serif ;
+	line-height: 1.5; 
+}
+
+
+
+h3 {
+	font-size: 1.2em;
+}
+
+.nav-links {
+	width: 90%;
+	margin: 0 5%;
+	display: flex;
+	justify-content: space between;
+
+	
+}
+nav {
+    display: flex;
+}
+nav a {
+	width: 15%;
+	text-decoration: none;
+	margin: 2% 1%;
+	padding: 1% 4%;
+	color: #363232;
+}
+.logo {
+    display: flex;
+    align-self: center;
+    width: 12vw;
+    height: 6vh;
+	
+}
+
+.head-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.head-text div {
+    text-align: center;
+    width:35%;
+    margin: 2% 5%;
+    padding: 2% 2.5%;
+    font-size: 5em;
+    text-transform: uppercase;
+
+}
+.head-text img {
+    width: 35%;
+    margin: 2% 5%;
+    padding: 2% 2.5%;
+}
+ button {
+     width: 50%;
+     height: 8%;
+     background: #f8f8f8;
+     border: 1px solid black;
+     font-size:0.2em
+    
+ }
+.top-section {
+    width: 90%;
+    display:flex;
+    justify-content: space-between;
+    margin: 2% 5%;
+    padding: 1% 3%;
+
+}
+.top-section div {
+    width: 45%;
+    padding: 2% 2%; 
+    
+}
+
+hr  {
+	width: 80%;
+}
+.main-header {
+    display: flex;
+    flex-direction: column;
+	margin: 1% 5%;
+	padding-top:1%;
+
+}
+	
+.middle-img {
+   	width: 80%;
+    margin:2% 10%;
+    
+}
+.main-section {
+	width: 85%;
+	display: flex;
+	justify-content: space-between;;
+	flex-wrap: wrap;
+	margin: 2% 7.5%;
+	
+}
+.main-section div {
+	width: 32%;
+    padding: 2% 2.5%;
+	line-height: 1.2;
+
+}
+footer {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 5%;
+	padding: 1% 5%;
+}
+address, a {
+	line-height: 1.2;
+	margin-bottom: 2%;
+	color: black;
+	text-decoration: none;
+}
+.copyRight {
+	text-align: center;
+	padding: 3%;
+}
+
+/*---------- Tablet media styling ------------*/
+
+@media (max-width:800px){
+    .main-header{
+        width: 90%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .head-text img {
+        display:none;
+    }
+    nav {
+        flex-direction: column-reverse;
+         justify-content: center;
+        width: 100%;
+        height: 30vh;
+        margin: 0 5% 0 0;
+        
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        
+        
+    }
+    .nav-links a {
+        width: 15%;
+        padding: 1% 2%;
+        font-size: 1.1em;
+        font-weight: 500; 
+        color: #aca6a6;
+    }
+
+   
+    .logo {
+        width: 20vw;
+        height: 5vh;
+        margin: 0 0 5% 0;
+       
+    }
+    button {  
+        font-size: 1.5vw;
+        font-weight: 500;
+        width: 25vw;
+        height: 5vh;
+    }
+    .head-text {
+        display: flex;
+        align-items: center;
+       
+        padding: 5% 0;
+        
+       
+    }
+    .head-text div {
+        width: 45vw;;
+    }
+
+
+}
+
+/*-------------  Mobile media styling -----------------*/
+
+@media (max-width:480px){
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /*background: green;*/
+        height: 100vh;
+        margin: 5% 2%;
+    }
+     /*  .head-text {
+           background:  brown;
+       }*/
+   
+  nav{
+     display: flex;
+      flex-direction: column-reverse;
+      height:55vh;
+  }
+
+.nav-links {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 55vh;
+    
+}
+.nav-links a {
+    
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid #999696;
+    padding: 4% 0;
+    margin: 0 ;
+    font-size: 1.3em;
+    color: #aca6a6
+    ;
+}
+.nav-links a:nth-of-type(1){
+    margin-top: 2%;
+    border-top: 1px solid #999696;
+}
+button{
+    font-size: 0.2em;
+    width: 25vw;
+    height: 5vh;
+    font-weight: 500;
+    background: #f5f5f5;
+}
+.logo {
+    width:20vh;
+    height: 5vh;
+    margin: 2% 0;
+ 
+    
+    
+    
+}
+nav {
+    width: 100%;
+    margin: 0 5%;
+
+}
+.nav-links {
+   
+    margin: 1%;
+}
+.head-text div {
+    font-family: arial,sans-serif;
+    text-transform: uppercase;
+    width: 60%;
+    font-size: 3.5em;
+    font-weight: 900;
+    
+}
+footer a {
+    border-top:0;
+}
+
+   
+    .top-section, .main-section {
+        flex-direction: column;
+    }
+    .top-section div {
+        margin: 2% 0;
+        width: 100%;
+    }
+    .main-section div {
+        margin: 2% 0;
+        width:100%;
+    }
+
+}
